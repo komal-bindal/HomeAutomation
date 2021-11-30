@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">HomeAutomation</string>
+    <string name="welcome">Welcome!!</string>
+    <string name="enter_your_name">Enter your name</string>
+    <string name="enter_phone_number">Enter phone number</string>
+    <string name="sign_up">Sign up</string>
+    <string name="background_shape">background shape</string>
 </resources>
