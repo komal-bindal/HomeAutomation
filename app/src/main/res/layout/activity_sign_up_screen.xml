@@ -77,12 +77,12 @@
                 tools:ignore="RtlSymmetry,SpUsage" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName"
+                android:id="@+id/nameEditText"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="32dp"
-                android:layout_marginTop="32dp"
+                android:layout_marginTop="36dp"
                 android:layout_marginRight="32dp"
                 android:ems="10"
                 android:hint="@string/enter_your_name"
@@ -90,18 +90,17 @@
                 android:minHeight="48dp"
                 android:textSize="@dimen/default_text"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/welcomeText"
                 tools:ignore="TextContrastCheck" />
 
             <EditText
-                android:id="@+id/editTextTextPersonName2"
+                android:id="@+id/phoneNumberEditText"
                 style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="32dp"
-                android:layout_marginTop="32dp"
+                android:layout_marginTop="36dp"
                 android:layout_marginRight="32dp"
                 android:ems="10"
                 android:hint="@string/enter_phone_number"
@@ -110,13 +109,12 @@
                 android:minHeight="48dp"
                 android:textSize="@dimen/default_text"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName"
+                app:layout_constraintTop_toBottomOf="@+id/nameEditText"
                 tools:ignore="TextContrastCheck" />
 
             <Button
-                android:id="@+id/button3"
+                android:id="@+id/signupButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="32dp"
@@ -130,8 +128,25 @@
                 android:textColor="#000000"
                 android:textSize="@dimen/default_text"
                 app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName2"
+                app:layout_constraintTop_toBottomOf="@+id/phoneNumberEditText"
                 tools:ignore="TextContrastCheck" />
+
+            <TextView
+                android:id="@+id/signinText"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="52dp"
+                android:paddingStart="22dp"
+                android:paddingEnd="22dp"
+                android:text="@string/already_have_an_account_sign_in_here"
+                android:textColor="@color/black"
+                android:textSize="@dimen/small_text"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.493"
+                app:layout_constraintStart_toStartOf="parent" />
+
         </androidx.constraintlayout.widget.ConstraintLayout>
     </LinearLayout>
 
