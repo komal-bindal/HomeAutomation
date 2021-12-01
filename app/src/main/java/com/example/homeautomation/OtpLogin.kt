@@ -3,8 +3,6 @@ package com.example.homeautomation
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.text.Editable
-import android.text.TextWatcher
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
@@ -27,7 +25,7 @@ class OtpLogin : AppCompatActivity() {
         setContentView(R.layout.activity_otp_login)
 
         phoneNumberEditText = findViewById(R.id.phoneEditText)
-        getOtpButton = findViewById(R.id.signinPhoneNumberButton)
+        getOtpButton = findViewById(R.id.verifyOtpButton)
 
         phoneNumberEditText.requestFocus()
 
