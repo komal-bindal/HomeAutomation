@@ -1,5 +1,4 @@
 package com.example.homeautomation
-
 import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageView
@@ -9,6 +8,6 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        startActivity(Intent(this, SigninScreen::class.java))
+        startActivity(Intent(this, SplashScreen::class.java))
     }
 }

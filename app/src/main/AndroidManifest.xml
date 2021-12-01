@@ -10,14 +10,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HomeAutomation">
         <activity
+            android:name=".SplashScreen"
+            android:exported="true" />
+        <activity
             android:name=".SigninScreen"
             android:exported="true" />
         <activity
             android:name=".SignUpScreen"
             android:exported="true" />
-        <activity
-            android:name=".Demo"
-            android:exported="true" />
+
         <activity
             android:name=".MainActivity"
             android:exported="true">
