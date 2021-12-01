@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
+import android.widget.TextView
 import android.widget.Toast
 import com.google.firebase.FirebaseException
 import com.google.firebase.auth.PhoneAuthCredential
@@ -16,7 +17,7 @@ class OtpLogin : AppCompatActivity() {
     private lateinit var phoneNumberEditText: EditText
     private lateinit var getOtpButton: Button
     private lateinit var verificationOTP: String
-    private val PHONE_NUMBER_ERROR = "phone number should have length 10"
+    private lateinit var signupText :TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
 
@@ -26,19 +27,22 @@ class OtpLogin : AppCompatActivity() {
 
         phoneNumberEditText = findViewById(R.id.phoneEditText)
         getOtpButton = findViewById(R.id.verifyOtpButton)
+        signupText=findViewById(R.id.signupText)
 
         phoneNumberEditText.requestFocus()
 
-        val intent = intent
-        val user = intent.getStringExtra("User").toString()
+        signupText.setOnClickListener {
+            startActivity(Intent(this, SignUpScreen::class.java))
+            finish()
+        }
 
         getOtpButton.setOnClickListener(
             object : View.OnClickListener {
                 override fun onClick(v: View) {
-                    if (phoneNumberEditText.text.toString().trim().isEmpty()) {
+                    if (phoneNumberEditText.text.toString().trim().length<10) {
                         Toast.makeText(
                             applicationContext,
-                            "Please enter phone number",
+                            "Please enter valid phone number",
                             Toast.LENGTH_SHORT
                         )
                             .show()
@@ -58,10 +62,9 @@ class OtpLogin : AppCompatActivity() {
                                 verificationOTP = verificationId
                                 val phoneNumber = "+91 " + phoneNumberEditText.text.toString()
                                 val intent =
-                                    Intent(applicationContext,OtpLogin::class.java)
+                                    Intent(applicationContext,ValidateOtp::class.java)
                                 intent.putExtra("PhoneNumber", phoneNumber.toString())
                                 intent.putExtra("VerificationOTP", verificationOTP.toString())
-                                intent.putExtra("User", user)
                                 startActivity(intent)
                                 finish()
                             }

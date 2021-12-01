@@ -11,14 +11,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HomeAutomation">
         <activity
-            android:name="ValidateOtp"
-            android:exported="true"
-             />
+            android:name=".Animation"
+            android:exported="true" />
+
         <activity
-            android:name=".OtpLogin"
+            android:name=".ValidateOtp"
             android:exported="true" />
         <activity
-            android:name=".SigninScreen"
+            android:name=".OtpLogin"
             android:exported="true" />
         <activity
             android:name=".SignUpScreen"

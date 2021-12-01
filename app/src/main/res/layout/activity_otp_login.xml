@@ -114,14 +114,14 @@
                 tools:ignore="TextContrastCheck" />
 
             <TextView
-                android:id="@+id/signinText"
+                android:id="@+id/signupText"
                 android:layout_width="match_parent"
                 android:gravity="center"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="52dp"
                 android:paddingStart="22dp"
                 android:paddingEnd="22dp"
-                android:text="@string/already_have_an_account_sign_in_here"
+                android:text="@string/don_t_have_an_account_signup_here"
                 android:textColor="@color/black"
                 android:textSize="@dimen/small_text"
                 app:layout_constraintBottom_toBottomOf="parent"

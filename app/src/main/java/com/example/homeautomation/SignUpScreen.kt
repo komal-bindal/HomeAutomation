@@ -12,7 +12,7 @@ class SignUpScreen : AppCompatActivity() {
         setContentView(R.layout.activity_sign_up_screen)
         signin = findViewById(R.id.signinText)
         signin.setOnClickListener {
-            startActivity(Intent(this, SigninScreen::class.java))
+            startActivity(Intent(this, OtpLogin::class.java))
             finish()
         }
     }

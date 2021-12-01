@@ -1,9 +1,7 @@
 package com.example.homeautomation
 import android.content.Intent
 import android.os.Bundle
-import android.widget.Button
-import android.widget.EditText
-import android.widget.Toast
+import android.widget.*
 import androidx.appcompat.app.AppCompatActivity
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.FirebaseAuthInvalidCredentialsException
@@ -11,17 +9,27 @@ import com.google.firebase.auth.PhoneAuthCredential
 import com.google.firebase.auth.PhoneAuthProvider
 
 class ValidateOtp : AppCompatActivity() {
-    lateinit var auth: FirebaseAuth
+
+    private lateinit var auth: FirebaseAuth
+    private lateinit var phoneTextView: TextView
+    private lateinit var verifyOtpButton: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
+
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_validate_otp)
 
+        phoneTextView =findViewById(R.id.phoneText)
+        verifyOtpButton = findViewById(R.id.verifyOtpButton)
         auth = FirebaseAuth.getInstance()
-        val storedVerificationId = intent.getStringExtra("storedVerificationId")
+
+        val intent = intent
+        val storedVerificationId = intent.getStringExtra("VerificationOTP").toString()
+        val phoneNumber = intent.getStringExtra("PhoneNumber").toString()
+        phoneTextView.text = phoneNumber
 
 
-        findViewById<Button>(R.id.verifyOtpButton).setOnClickListener {
+        verifyOtpButton.setOnClickListener {
             val otp = findViewById<EditText>(R.id.otpCode1).text.trim()
                 .toString() + findViewById<EditText>(R.id.otpCode2).text.trim()
                 .toString() + findViewById<EditText>(R.id.otpCode3).text.trim()
@@ -34,6 +42,7 @@ class ValidateOtp : AppCompatActivity() {
                     storedVerificationId.toString(), otp
                 )
                 signInWithPhoneAuthCredential(credential)
+                Toast.makeText(this, "welcome", Toast.LENGTH_SHORT).show()
             } else {
                 Toast.makeText(this, "Enter OTP", Toast.LENGTH_SHORT).show()
             }
@@ -50,7 +59,6 @@ class ValidateOtp : AppCompatActivity() {
                 } else {
 
                     if (task.exception is FirebaseAuthInvalidCredentialsException) {
-
                         Toast.makeText(this, "Invalid OTP", Toast.LENGTH_SHORT).show()
                     }
                 }
