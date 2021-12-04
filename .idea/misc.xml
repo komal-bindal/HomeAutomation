@@ -3,6 +3,19 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/KRITIKA/AndroidStudioProjects/HomeAutomation/app/src/main/res/drawable/gradientone.xml" value="0.1638888888888889" />
+        <entry key="..\:/Users/KRITIKA/AndroidStudioProjects/HomeAutomation/app/src/main/res/drawable/gradientthree.xml" value="0.1638888888888889" />
+        <entry key="..\:/Users/KRITIKA/AndroidStudioProjects/HomeAutomation/app/src/main/res/drawable/gradienttwo.xml" value="0.1638888888888889" />
+        <entry key="..\:/Users/KRITIKA/AndroidStudioProjects/HomeAutomation/app/src/main/res/drawable/shape1.xml" value="0.1685185185185185" />
+        <entry key="..\:/Users/KRITIKA/AndroidStudioProjects/HomeAutomation/app/src/main/res/drawable/shape2.xml" value="0.1638888888888889" />
+        <entry key="..\:/Users/KRITIKA/AndroidStudioProjects/HomeAutomation/app/src/main/res/layout/activity_animation.xml" value="0.1921875" />
+        <entry key="..\:/Users/KRITIKA/AndroidStudioProjects/HomeAutomation/app/src/main/res/layout/activity_main.xml" value="0.1921875" />
+        <entry key="..\:/Users/KRITIKA/AndroidStudioProjects/HomeAutomation/app/src/main/res/layout/activity_onboarding_screen.xml" value="0.178125" />
+        <entry key="..\:/Users/KRITIKA/AndroidStudioProjects/HomeAutomation/app/src/main/res/layout/activity_otp_login.xml" value="0.1921875" />
+        <entry key="..\:/Users/KRITIKA/AndroidStudioProjects/HomeAutomation/app/src/main/res/layout/activity_sign_up_screen.xml" value="0.1921875" />
+        <entry key="..\:/Users/KRITIKA/AndroidStudioProjects/HomeAutomation/app/src/main/res/layout/activity_signin_screen.xml" value="0.1921875" />
+        <entry key="..\:/Users/KRITIKA/AndroidStudioProjects/HomeAutomation/app/src/main/res/layout/activity_validate_otp.xml" value="0.1921875" />
+        <entry key="..\:/Users/KRITIKA/AndroidStudioProjects/HomeAutomation/app/src/main/res/layout/slide_page.xml" value="0.1921875" />
         <entry key="..\:/Users/LENOVO/AndroidStudioProjects/HomeAutomation/app/src/main/res/drawable/shape1.xml" value="0.24444444444444444" />
         <entry key="..\:/Users/LENOVO/AndroidStudioProjects/HomeAutomation/app/src/main/res/drawable/shape2.xml" value="0.24444444444444444" />
         <entry key="..\:/Users/LENOVO/AndroidStudioProjects/HomeAutomation/app/src/main/res/layout/activity_demo.xml" value="0.25416666666666665" />
